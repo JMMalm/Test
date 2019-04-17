@@ -1,2 +1,2 @@
-[JMM 2016.10.29]
-This is a simple test document for a test repo to get familiar with GIT again. Lorem ipsum.
+[JMM 2019.04.16]
+This is a test repo for practicing Git.
