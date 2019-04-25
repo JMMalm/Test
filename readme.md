@@ -17,6 +17,12 @@ This is a test repo for practicing Git.
   1. `git fetch origin`
   2. `git reset --hard origin/master`
 
+## Branching
+* View local branches: `git branch`
+* Create and checkout new branch: `git checkout -b <branchName>`
+* Switch to existing branch: `git checkout <branchName>`
+
+
 ### Conflicts
 1. Manually sort out the conflict changes.
 2. Mark the changes as "merged" via: `git add <mergedFileName>`
