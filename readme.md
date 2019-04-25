@@ -22,6 +22,12 @@ This is a test repo for practicing Git.
 * Create and checkout new branch: `git checkout -b <branchName>`
 * Switch to existing branch: `git checkout <branchName>`
 
+### Stashing
+* Save changes and revert to clean workspace: `git stash`
+* List stashes: `git stash list`
+  * These are specific to each branch.
+* Show more stash detail: `git stash show`
+
 
 ### Conflicts
 1. Manually sort out the conflict changes.
