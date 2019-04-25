@@ -27,6 +27,9 @@ This is a test repo for practicing Git.
 * List stashes: `git stash list`
   * These are specific to each branch.
 * Show more stash detail: `git stash show`
+* Apply stashed changes: `git stash pop`
+  * Throws away the stash after successfully applying the changes.
+  * Use `git stash apply` to apply stashed changes and *keep* the stash.
 
 
 ### Conflicts
