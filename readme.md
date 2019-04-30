@@ -31,6 +31,8 @@ This is a test repo for practicing Git.
   * Throws away the stash after successfully applying the changes.
   * Use `git stash apply` to apply stashed changes and *keep* the stash.
 
+### Visualization
+* View a graph of branches and commits: `git log --graph --decorate --oneline`
 
 ### Conflicts
 1. Manually sort out the conflict changes.
