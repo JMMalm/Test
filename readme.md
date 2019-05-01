@@ -8,19 +8,23 @@ This is a test repo for practicing Git.
 3. Commit changes locally: `git commit -m "Commit message."`
 4. Push changes: `git push origin <branch>`
 
+## Branching
+* View local branches: `git branch`
+  * Plus view remotes: `git branch -a`
+* Create and checkout new branch: `git checkout -b <branchName>`
+* Switch to existing branch: `git checkout <branchName>`
+
 ## Updating & Merging
 * Get latest: `Git pull`
+* Compare local with remote: `git diff <localBranch> <remote/remoteBranch>`
+
 * Merge another branch into the active branch: `git merge <branch>`
 * To preview merge changes: `git diff <sourceBranch> <targetBranch>`
+
 * Replace local change(s): `git checkout -- <fileName>` (replaces with most recent content in HEAD)
 * Replace ALL local changes (caution!):
   1. `git fetch origin`
   2. `git reset --hard origin/master`
-
-## Branching
-* View local branches: `git branch`
-* Create and checkout new branch: `git checkout -b <branchName>`
-* Switch to existing branch: `git checkout <branchName>`
 
 ### Stashing
 * Save changes and revert to clean workspace: `git stash`
@@ -31,6 +35,8 @@ This is a test repo for practicing Git.
   * Throws away the stash after successfully applying the changes.
   * Use `git stash apply` to apply stashed changes and *keep* the stash.
 
+### Visualization
+* View a graph of branches and commits: `git log --graph --decorate --oneline`
 
 ### Conflicts
 1. Manually sort out the conflict changes.
