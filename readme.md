@@ -14,6 +14,10 @@ This is a test repo for practicing Git.
 * Create and checkout new branch: `git checkout -b <branchName>`
 * Switch to existing branch: `git checkout <branchName>`
 
+### Pruning (remove stale branches)
+* See what would be pruned: `git prune --dry-run`
+* Prune after fetch: `git fetch origin --prune`
+
 ## Updating & Merging
 * Get latest: `Git pull`
 * Compare local with remote: `git diff <localBranch> <remote/remoteBranch>`
@@ -46,3 +50,4 @@ This is a test repo for practicing Git.
 * All changes: `git log`
   * Press `q` to or `q + Enter` (Windows) to quit.
 * Compressed history: `git log --pretty=oneline`
+* Compare branches on GitHub: Add `/compare` to the end of the repository.
