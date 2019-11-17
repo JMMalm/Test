@@ -1,5 +1,5 @@
 # Test
-This is a test repo for practicing Git.
+This is a test repo for practicing Git along with notes for reference.
 
 ## Basics
 1. Current status: `git status` or `git status -s` for the short version.
@@ -11,8 +11,8 @@ This is a test repo for practicing Git.
 ## Branching
 * View local branches: `git branch`
   * Plus view remotes: `git branch -a`
-* Create and checkout new branch: `git checkout -b <branchName>`
 * Switch to existing branch: `git checkout <branchName>`
+* Create and checkout new branch: `git checkout -b <branchName>`
 
 ### Pruning (remove stale branches)
 * See what would be pruned: `git prune --dry-run`
@@ -20,15 +20,23 @@ This is a test repo for practicing Git.
 
 ## Updating & Merging
 * Get latest: `Git pull`
-* Compare local with remote: `git diff <localBranch> <remote/remoteBranch>`
 
-* Merge another branch into the active branch: `git merge <branch>`
 * To preview merge changes: `git diff <sourceBranch> <targetBranch>`
+* Merge another branch into the active branch: `git merge <branch>`
+* "Squash" changes (condense into single commit): `git merge --squash <source branch>`
 
 * Replace local change(s): `git checkout -- <fileName>` (replaces with most recent content in HEAD)
 * Replace ALL local changes (caution!):
   1. `git fetch origin`
   2. `git reset --hard origin/master`
+
+### Comparing
+* Compare local branch with remote: `git diff <localBranch> <remote/remoteBranch>`
+* More succinct display option: `git log --left-right --graph --cherry-pick --oneline <branch>...<remote>/<branch>`
+
+### Rebase
+["Rebase"](https://git-scm.com/docs/git-rebase) moves the base of source branch to the target branch's end point. Rebase *rewrites* history whereas *merge* preserves history. Recommended to *not* rebase a branch once published to the remote.
+* `git rebase <target_branch> <current_branch>`
 
 ### Stashing
 * Save changes and revert to clean workspace: `git stash`
